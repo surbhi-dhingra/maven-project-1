@@ -3,8 +3,8 @@ agent any
   stages{
     stage('Build'){
       steps {
-        sh 'printenv'
         env.MAVEN_HOME = '/home/jenkins/maven'
+        sh 'printenv'
         sh 'mvn clean package'	
     }
     post {
