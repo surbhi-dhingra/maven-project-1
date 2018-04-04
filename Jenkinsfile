@@ -4,6 +4,7 @@ agent any
     stage('Build'){
       steps {
         sh 'printenv'
+        env.MAVEN_HOME = '/home/jenkins/maven'
         sh 'mvn clean package'	
     }
     post {
