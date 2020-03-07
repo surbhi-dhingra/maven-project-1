@@ -6,6 +6,11 @@ node{
     mvn clean package
     '''
     }
+
+stage('test')
+{
+sh "echo Hi"
+}
     
   post {
     success {
