@@ -8,7 +8,7 @@ node{
 
 stage('test')
 {
-sh "echo Hi"
+sh "echo Hi Surbhi"
 }
     
   post {
